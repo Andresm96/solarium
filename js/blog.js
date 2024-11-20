@@ -1,4 +1,4 @@
-// Datos simulados de artículos
+// Artículos del blog
 const articles = [
     {
         title: "El Futuro de la Energía Solar",
@@ -21,12 +21,12 @@ const articles = [
 ];
 
 // Referencias al DOM
-const blogContainer = document.getElementById("blog");
+const blogContainer = document.getElementById("blogContainer");
 const searchInput = document.getElementById("searchInput");
 
 // Función para renderizar los artículos
 function renderArticles(filteredArticles) {
-    blogContainer.innerHTML = ""; // Limpiar el contenedor
+    blogContainer.innerHTML = ""; // Limpiar artículos anteriores
     filteredArticles.forEach(article => {
         const articleHTML = `
             <article class="post">
@@ -40,11 +40,12 @@ function renderArticles(filteredArticles) {
     });
 }
 
-// Función para filtrar artículos
+// Función para filtrar artículos por búsqueda
 function filterArticles() {
     const query = searchInput.value.toLowerCase();
-    const filteredArticles = articles.filter(article =>
-        article.title.toLowerCase().includes(query) || article.description.toLowerCase().includes(query)
+    const filteredArticles = articles.filter(article => 
+        article.title.toLowerCase().includes(query) || 
+        article.description.toLowerCase().includes(query)
     );
     renderArticles(filteredArticles);
 }
@@ -52,5 +53,5 @@ function filterArticles() {
 // Eventos
 searchInput.addEventListener("input", filterArticles);
 
-// Inicializar la página con todos los artículos
+// Inicializar página con todos los artículos
 renderArticles(articles);
