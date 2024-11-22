@@ -13,9 +13,9 @@ h1{
   font-style: italic;
   font-weight: 300;
 }
-div{
+/* div{
     border: 1px solid black;
-} 
+}  */
 /* Header and Nav */
 header{
     position: absolute;
@@ -85,14 +85,32 @@ nav li a:hover{
 }
 
 
-button{
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
     background-color: orange;
-    color: aliceblue;
-    border-radius: 50px;
-    height: 35px;
-    width: 250px;
-    margin: 20px;
-}
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color:rgb(223, 145, 0);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
 
 .solar-eolica{
     display: flex;
@@ -134,9 +152,7 @@ button{
 }
 
 .ahorrar1{
-    margin: 1%;
     max-width: 50%;
-    padding-left: 25px;
 }
 
 .ahorrar2{
@@ -146,16 +162,17 @@ button{
 .formulario{
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-    gap: 20px; /* Espaciado entre las columnas */
+    gap: 15px; /* Espaciado entre las columnas */
     border: 1px solid #000; /* Opcional: para visualizar el contenedor */
     padding: 10px; /* Espaciado interno del contenedor */
    
    
 }
-.tv{   
+
+.selector{
     box-sizing: border-box;
     padding: 10px;
-    margin: 8px;
+    margin: 3px;
     border:none;
     border-radius: 5px;
     border: 1px solid #c6c4c4;
@@ -163,6 +180,4 @@ button{
     background-color: #fff;
     font-size: 16px;
     color: #505050;
-    
-    
 }
