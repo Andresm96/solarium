@@ -1,0 +1,47 @@
+.banner,
+.banner * {
+  box-sizing: border-box;
+}
+.banner {
+  position: relative;
+}
+.rectangle-1 {
+  background: #ffffff;
+  border-radius: 0px 0px 55px 55px;
+  width: 1512px;
+  height: 535px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-shadow: 2px 15px 18.8px 0px rgba(0, 0, 0, 0.19);
+}
+.tienes-preguntas-contactanos {
+  color: #505050;
+  text-align: left;
+  font-family: "Lato-BlackItalic", sans-serif;
+  font-size: 50px;
+  line-height: 119.82%;
+  font-weight: 900;
+  font-style: italic;
+  position: absolute;
+  left: 188px;
+  top: 233px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame {
+  width: 632px;
+  height: 398px;
+  position: absolute;
+  left: 770px;
+  top: 102px;
+  overflow: hidden;
+}
+.group {
+  height: auto;
+  position: absolute;
+  left: 76.51px;
+  top: 9.99px;
+  overflow: visible;
+}
