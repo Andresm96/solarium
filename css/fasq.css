@@ -50,8 +50,8 @@ nav li a:hover{
 
 .ban{
     display: flex;
-    background-image: url('/img/index/banner-pp-home-bg.webp'); background-repeat: no-repeat; width:100; height: 750px;
-    max-width: 100%;
+    background-image: url('/img/FAQ/banner.webp'); background-repeat: no-repeat; max-width:100%;height: 500px;
+    
 }
 .container {
     max-width: 800px;
