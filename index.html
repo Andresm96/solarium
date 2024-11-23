@@ -32,7 +32,7 @@
         </ul>
       </nav>
     </header>
-    <div class="ban"></div>
+    <div class="ban">
       <div class="contenido1"></div>
       <div class="contenido2">
         <h1>Descubre los Beneficios de la Energía Solar</h1>
@@ -59,39 +59,65 @@
       </div>
     </div>
 
-    <h2 id="titulo-ahorrar">¿Cuanto puedes ahorrar con nosotros?</h2>
+    <h2 id="titulo-ahorrar">¿Cuánto puedes ahorrar con nosotros?</h2>
 
     <div class="ahorrar">
       <div class="ahorrar1">
         <p>
-          Seleciona los elementos electrodomesticos con los que cuentas en casa
-          y conoce cuanto puedes ahorra en energia.
+          Selecciona los elementos electrodomésticos con los que cuentas en casa
+          y conoce cuánto puedes ahorrar en energía.
         </p>
-        <br><br>
+        <br /><br />
         <div class="formulario">
-          <select class="tv" name="tv" required>
-              <option value>Selecciona cantidad de televisores</option>
-              <option value="1">1 televisor</option>
-              <option value="2">2 televisores</option>
-              <option value="3">3 televisores</option>
+          <select id="tv" class="selector" name="tv" required>
+            <option value="0">Selecciona cantidad de televisores</option>
+            <option value="1">1 televisor</option>
+            <option value="2">2 televisores</option>
+            <option value="3">3 televisores</option>
           </select>
-          <select class="tv" name="tv" required>
-              <option value>Selecciona cantidad de televisores</option>
-              <option value="1">1 televisor</option>
-              <option value="2">2 televisores</option>
-              <option value="3">3 televisores</option>
+          <select id="lavadora" class="selector" name="lavadora" required>
+            <option value="0">Selecciona cantidad de lavadoras</option>
+            <option value="1">1 Lavadora</option>
+            <option value="2">2 Lavadoras</option>
+            <option value="3">3 Lavadoras</option>
           </select>
-          <select class="tv" name="tv" required>
-              <option value>Selecciona cantidad de televisores</option>
-              <option value="1">1 televisor</option>
-              <option value="2">2 televisores</option>
-              <option value="3">3 televisores</option>
+          <select id="habitaciones" class="selector" name="habitaciones" required>
+            <option value="0">Selecciona cantidad de habitaciones</option>
+            <option value="1">1 Habitación</option>
+            <option value="2">2 Habitaciones</option>
+            <option value="3">3 Habitaciones</option>
           </select>
+          <select id="auto" class="selector" name="auto" required>
+            <option value="0">Selecciona cantidad de autos</option>
+            <option value="1">1 Auto</option>
+            <option value="2">2 Autos</option>
+            <option value="3">3 Autos</option>
+          </select>
+          <select id="nevera" class="selector" name="nevera" required>
+            <option value="0">Selecciona cantidad de neveras</option>
+            <option value="1">1 Nevera</option>
+            <option value="2">2 Neveras</option>
+            <option value="3">3 Neveras</option>
+          </select>
+          <select id="personas" class="selector" name="personas" required>
+            <option value="0">Selecciona cantidad de personas</option>
+            <option value="1">1 Persona</option>
+            <option value="2">2 Personas</option>
+            <option value="3">3 Personas</option>
+          </select>
+          <button id="calcular">Calcular consumo</button>
+          <p id="resultado"></p>
         </div>
       </div>
       <div class="ahorrar2">
         <img src="/img/index/img-ahorro-casa.webp" />
       </div>
     </div>
+
+    <div>
+      <h1>Testimoniales</h1>
+    </div>
+    <script src="/js/index.js">
+    </script>
   </body>
 </html>
