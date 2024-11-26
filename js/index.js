@@ -30,3 +30,30 @@ document.getElementById('calcular').addEventListener('click', function () {
             document.getElementById('resultado').textContent =
               `El consumo total estimado es de ${consumoTotal} kWh/mes.`;
           });
+
+
+
+//testimoniales
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+
+let index = 0;
+
+function updateSlider() {
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+prevBtn.addEventListener('click', () => {
+  index = (index === 0) ? slides.length - 1 : index - 1;
+  updateSlider();
+});
+
+nextBtn.addEventListener('click', () => {
+  index = (index === slides.length - 1) ? 0 : index + 1;
+  updateSlider();
+});
+
+
+
