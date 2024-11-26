@@ -13,9 +13,9 @@
    font-style: italic;
    font-weight: 300;
  }
- /* div{
+ div{
      border: 1px solid black;
- }  */
+ } 
  /* Header and Nav */
  header{
      position: absolute;
@@ -63,9 +63,11 @@
  .ban{
      display: flex;
      background-image: url('/img/index/banner-pp-home-bg.webp'); background-repeat: no-repeat;
+     background-size: cover;
      width:100%; 
-     height: 100vh;
-     object-fit: cover;
+     height: 650px;
+     border: 1px solid orange;
+    
  }
  
  .contenido1{
@@ -167,8 +169,6 @@
      gap: 15px; /* Espaciado entre las columnas */
      border: 1px solid #000; /* Opcional: para visualizar el contenedor */
      padding: 10px; /* Espaciado interno del contenedor */
-    
-    
  }
  
  .selector{
@@ -186,52 +186,59 @@
 
  /* SECCION TESTIMONIALES */
  .testimonials-container {
-    text-align: center;
-    width: 80%;
-    max-width: 800px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .slider {
-    display: flex;
-    overflow: hidden;
-    margin: 20px 0;
-  }
-  
-  .slide {
-    min-width: 100%;
-    transition: transform 0.5s ease-in-out;
-    text-align: center;
-  }
-  
-  .slide img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
-  
-  .slide h3 {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .testimonial-text {
-    font-size: 16px;
-    color: #666;
-    margin: 10px 0;
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-    margin: 0 auto;
-  }
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.slide img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.slide h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin: 0 auto;
+}
+
   

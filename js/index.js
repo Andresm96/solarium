@@ -17,12 +17,12 @@ document.getElementById('calcular').addEventListener('click', function () {
             const nevera = parseInt(document.getElementById('nevera').value) || 0;
             const personas = parseInt(document.getElementById('personas').value) || 0;
       
-            // Calcular consumo total
+           // Calcular consumo total
             const consumoTotal =
               tv * consumos.tv +
               lavadora * consumos.lavadora +
               habitaciones * consumos.habitaciones +
-              auto * consumos.auto +
+              auto * consumos.auto + 
               nevera * consumos.nevera +
               personas * consumos.personas;
       
@@ -39,21 +39,27 @@ const slides = document.querySelectorAll('.slide');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 
-let index = 0;
+let currentIndex = 0;
 
-function updateSlider() {
-  slider.style.transform = `translateX(-${index * 100}%)`;
+// Actualiza la posición del slider
+function updateSliderPosition() {
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
+// Botón "Anterior"
 prevBtn.addEventListener('click', () => {
-  index = (index === 0) ? slides.length - 1 : index - 1;
-  updateSlider();
+  currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+  updateSliderPosition();
 });
 
+// Botón "Siguiente"
 nextBtn.addEventListener('click', () => {
-  index = (index === slides.length - 1) ? 0 : index + 1;
-  updateSlider();
+  currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+  updateSliderPosition();
 });
+
+// Configuración inicial
+updateSliderPosition();
 
 
 
