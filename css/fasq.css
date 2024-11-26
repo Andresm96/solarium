@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f0f8ff;
+    background-color: hsl(224, 21%, 90%);
     color: #333;
 }
 header{
