@@ -1,20 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    <h1>Hola</h1>
-    <div>
-        <p>holaaaaaaaaaaaa
-            
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/pages/index.html/"
+          ><img
+            src="/img/index/logo-solarium-header-svg.svg"
+            alt="logo-solarium-header"
+            width="189"
+            height="58"
+        /></a>
+        <ul>
+          <li><a href="/pages/index.html">Inicio</a></li>
+          <li><a href="/pages/beneficios.html">Beneficios</a></li>
+          <li><a href="/pages/testimonios.html">Testimonios</a></li>
+          <li><a href="/pages/blog.html">Blog</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+          <li><a href="/pages/faqs.html">FAQS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="ban">
+      <div class="contenido1"></div>
+      <div class="contenido2">
+        <h1>Descubre los Beneficios de la Energía Solar</h1>
+        <p style="color: aliceblue">
+          Contribuye a un futuro sostenible mientras ahorras en tus facturas de
+          energía.
         </p>
+        <button>Más información</button>
+      </div>
     </div>
-    <h2>  ejemplooo </h2>
-    <h2>ejemplo 2</h2>
-    <img src="img/contacto/img-contacto.png"/>
-</body>
+    <div class="solar-eolica">
+      <div class="seccion2">
+        <img src="/img/index/ilustracion-energia-eolica.webp" />
+      </div>
+      <div class="seccion3">
+        <h2 style="color: #505050; font-style: italic">¿Solar o Eolica?</h2>
+        <p style="color: #505050">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc
+          leo, porta et est et, maximus varius felis. Suspendisse eget arcu
+          lorem. Praesent at venenatis nibh, eu euismod arcu. Etiam sagittis sed
+          sapien dictum lobortis. Maecenas ipsum ex,
+        </p>
+        <button>Más información</button><button>Más información</button>
+      </div>
+    </div>
+
+    <h2 id="titulo-ahorrar">¿Cuánto puedes ahorrar con nosotros?</h2>
+
+    <div class="ahorrar">
+      <div class="ahorrar1">
+        <p>
+          Selecciona los elementos electrodomésticos con los que cuentas en casa
+          y conoce cuánto puedes ahorrar en energía.
+        </p>
+        <br /><br />
+        <div class="formulario">
+          <select id="tv" class="selector" name="tv" required>
+            <option value="0">Selecciona cantidad de televisores</option>
+            <option value="1">1 televisor</option>
+            <option value="2">2 televisores</option>
+            <option value="3">3 televisores</option>
+          </select>
+          <select id="lavadora" class="selector" name="lavadora" required>
+            <option value="0">Selecciona cantidad de lavadoras</option>
+            <option value="1">1 Lavadora</option>
+            <option value="2">2 Lavadoras</option>
+            <option value="3">3 Lavadoras</option>
+          </select>
+          <select id="habitaciones" class="selector" name="habitaciones" required>
+            <option value="0">Selecciona cantidad de habitaciones</option>
+            <option value="1">1 Habitación</option>
+            <option value="2">2 Habitaciones</option>
+            <option value="3">3 Habitaciones</option>
+          </select>
+          <select id="auto" class="selector" name="auto" required>
+            <option value="0">Selecciona cantidad de autos</option>
+            <option value="1">1 Auto</option>
+            <option value="2">2 Autos</option>
+            <option value="3">3 Autos</option>
+          </select>
+          <select id="nevera" class="selector" name="nevera" required>
+            <option value="0">Selecciona cantidad de neveras</option>
+            <option value="1">1 Nevera</option>
+            <option value="2">2 Neveras</option>
+            <option value="3">3 Neveras</option>
+          </select>
+          <select id="personas" class="selector" name="personas" required>
+            <option value="0">Selecciona cantidad de personas</option>
+            <option value="1">1 Persona</option>
+            <option value="2">2 Personas</option>
+            <option value="3">3 Personas</option>
+          </select>
+          <button id="calcular">Calcular consumo</button>
+          <p id="resultado"></p>
+        </div>
+      </div>
+      <div class="ahorrar2">
+        <img src="/img/index/img-ahorro-casa.webp" />
+      </div>
+    </div>
+
+    <div>
+      <h1>Testimoniales</h1>
+    </div>
+    <script src="/js/index.js">
+    </script>
+  </body>
 </html>

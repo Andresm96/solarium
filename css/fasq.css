@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+    color: #333;
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 70px;  
+    z-index:10;
+}
+nav{
+    max-width: 1024px;
+    margin: 0 auto;
+    
+}
+header img{
+    padding: 18px 10px;
+   
+}
+nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 10px;
+}
+nav li{
+    list-style-type: none;
+    display: inline;
+}
+nav li a{
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 15px 10px;
+    color: white;
+    margin: 15px;
+ 
+   
+}
+nav li a:hover{
+    color: white;
+    background-color:orange;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.ban{
+    display: flex;
+    background-image: url('/img/FAQ/banner.webp'); background-repeat: no-repeat; max-width:100%;height: 500px;
+    
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #000305;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question:hover {
+    background-color: #e6f7ff;
+}
+
+.question h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #000509;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: #f1f1f1;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+    color: #555;
+}

@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Preguntas Frecuentes</title>
+    <link rel="stylesheet" href="../css/fasq.css">
+
 </head>
+<header>
+    <nav>
+        <a href="/pages/index.html/"><img src="../img/index/logo-solarium-header-svg.svg" alt="logo-solarium-header" width="189" height="58"></a>
+        <ul>
+            <li><a href="/pages/index.html">Inicio</a></li>
+            <li><a href="/pages/beneficios.html">Beneficios</a></li>
+            <li><a href="/pages/testimonios.html">Testimonios</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="/pages/faqs.html">FAQS</a></li>
+        </ul>
+
+    </nav>
+</header> 
 <body>
-    
+    <div class="ban"></div>
+    <div class="container">
+        <h1>Preguntas Frecuentes</h1>
+        <div class="question" onclick="toggleAnswer(1)">
+            <h2>¿Cómo funciona un panel solar y cómo convierte la luz solar en electricidad?</h2>
+            <p id="answer1" class="answer">
+                Los paneles solares están compuestos por células fotovoltaicas hechas de materiales semiconductores, como el silicio. 
+                Cuando la luz solar incide sobre estas células, los fotones de luz liberan electrones en el material, generando un flujo de electricidad (corriente continua).
+            </p>
+        </div>
+
+        <div class="question" onclick="toggleAnswer(2)">
+            <h2>¿Cuál es la diferencia entre la energía solar fotovoltaica y la energía solar térmica?</h2>
+            <p id="answer2" class="answer">
+                La energía solar fotovoltaica convierte la luz solar directamente en electricidad mediante células solares, mientras que 
+                la energía solar térmica utiliza el calor del sol para calentar un fluido que genera vapor, el cual mueve una turbina y produce electricidad.
+            </p>
+        </div>
+
+        <div class="question" onclick="toggleAnswer(3)">
+            <h2>¿Qué factores afectan la eficiencia de los paneles solares?</h2>
+            <p id="answer3" class="answer">
+                La eficiencia de los paneles depende de factores como el ángulo de inclinación, la orientación, la temperatura ambiente, 
+                la limpieza de los paneles, la intensidad de la luz solar, y el tipo de material utilizado en las células fotovoltaicas.
+            </p>
+        </div>
+
+        <div class="question" onclick="toggleAnswer(4)">
+            <h2>¿Cuánto tiempo suele tardar un sistema de energía solar en recuperar la inversión inicial?</h2>
+            <p id="answer4" class="answer">
+                En promedio, un sistema solar residencial puede recuperar su inversión en 5 a 10 años, dependiendo de los costos de instalación, 
+                incentivos locales, y la cantidad de luz solar disponible en la ubicación.
+            </p>
+        </div>
+
+        <div class="question" onclick="toggleAnswer(5)">
+            <h2>¿Cuál es la vida útil promedio de un panel solar y cómo afecta esto a la rentabilidad?</h2>
+            <p id="answer5" class="answer">
+                La mayoría de los paneles solares tienen una vida útil de entre 25 y 30 años. Esto significa que pueden seguir generando electricidad 
+                de bajo costo después de haber recuperado la inversión, lo que mejora la rentabilidad a largo plazo.
+            </p>
+        </div>
+        <div class="question" onclick="toggleAnswer(5)">
+            <h2>¿Es posible utilizar energía solar durante la noche o en días nublados? ¿Cómo se almacena la energía para estos casos?</h2>
+            <p id="answer5" class="answer">
+                Durante la noche o en días nublados, se puede utilizar la energía almacenada en baterías solares, las cuales guardan el excedente producido durante el día. Otra opción es estar conectado a la red eléctrica para compensar los períodos de baja generación.
+            </p>
+        </div>
+        <div class="question" onclick="toggleAnswer(5)">
+            <h2>¿Qué beneficios medioambientales ofrece la energía solar en comparación con otras fuentes de energía?</h2>
+            <p id="answer5" class="answer">
+                La energía solar es una fuente renovable que no emite gases de efecto invernadero ni contaminantes durante su operación, lo que ayuda a reducir la dependencia de combustibles fósiles y disminuir la huella de carbono.
+            </p>
+        </div>
+        <div class="question" onclick="toggleAnswer(5)">
+            <h2>¿Qué avances recientes se han logrado en tecnología solar para mejorar su eficiencia?</h2>
+            <p id="answer5" class="answer">
+                En los últimos años, se han desarrollado tecnologías como los paneles bifaciales, que captan luz solar por ambos lados, y las células de perovskita, que prometen mejorar la eficiencia y reducir los costos de producción.
+            </p>
+        </div>
+    </div>
+
+    <script src="../js/fasq.js"></script>
 </body>
 </html>
