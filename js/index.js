@@ -17,12 +17,12 @@ document.getElementById('calcular').addEventListener('click', function () {
             const nevera = parseInt(document.getElementById('nevera').value) || 0;
             const personas = parseInt(document.getElementById('personas').value) || 0;
       
-            // Calcular consumo total
+           // Calcular consumo total
             const consumoTotal =
               tv * consumos.tv +
               lavadora * consumos.lavadora +
               habitaciones * consumos.habitaciones +
-              auto * consumos.auto +
+              auto * consumos.auto + 
               nevera * consumos.nevera +
               personas * consumos.personas;
       
@@ -30,3 +30,36 @@ document.getElementById('calcular').addEventListener('click', function () {
             document.getElementById('resultado').textContent =
               `El consumo total estimado es de ${consumoTotal} kWh/mes.`;
           });
+
+
+
+//testimoniales
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+
+let currentIndex = 0;
+
+// Actualiza la posición del slider
+function updateSliderPosition() {
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Botón "Anterior"
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+  updateSliderPosition();
+});
+
+// Botón "Siguiente"
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+  updateSliderPosition();
+});
+
+// Configuración inicial
+updateSliderPosition();
+
+
+
