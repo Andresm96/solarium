@@ -1,80 +1,108 @@
-/* Establece el color de fondo del cuerpo en azul. Establece el tipo de letra a Rubik */
+.acordeon {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+header{
+  position: absolute;
+  width: 100%;
+  height: 70px;  
+  z-index:10;
+}
+nav{
+  max-width: 1024px;
+  margin: 0 auto;
+  
+}
+header img{
+  padding: 18px 10px;
+ 
+}
+nav ul{
+  float: right;
+  list-style: none;
+  text-align: center;
+  vertical-align: top;
+  margin: 0 10px;
+}
+nav li{
+  list-style-type: none;
+  display: inline;
+}
+nav li a{
+  font-size: 1em;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 15px 10px;
+  color: white;
+  margin: 15px;
 
-body {
-    background-color: #3d1feb;
-    font-family: 'rubik', sans-serif;
-  }
-  
-  /* Alinea el texto del encabezado al centro. */
-   
-  h1 {
-    text-align: center;
-  }
-  
-  /* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
-  
-  .acordeon {
-    width: 800px;
-    margin: 90px auto;
-    color: black;
-    background-color: white;
-    padding: 45px 45px;
-  }
-  .acordeon .contenedor {
-    position: relative;
-    margin: 10px 10px;
-  }
-  
-  /* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
-  
-  .acordeon .etiqueta {
-    position: relative;
-    padding: 10px 0;
-    font-size: 30px;
-    color: black;
-    cursor: pointer;
-  }
-  /* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
+ 
+}
+nav li a:hover{
+  color: white;
+  background-color:orange;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
 
-.acordeon .etiqueta::before {
-    content: '+';
-    color: black;
-    position: absolute;
-    top: 50%;
-    right: -5px;
-    font-size: 30px;
-    transform: translateY(-50%);
-  }
+.ban{
+  display: flex;
+  background-image: url('/img/beneficios/Mask\ group.webp'); background-repeat: no-repeat; max-width:100%;height: 500px;
   
-  /* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
-  
-  .acordeon .contenido {
-    position: relative;
-    background: white;
-    height: 0;
-    font-size: 20px;
-    text-align: justify;
-    width: 780px;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-  
-  /* Añade una línea horizontal entre los contenidos */
-  
-  .acordeon hr {
-    width: 100;
-    margin-left: 0;
-    border: 1px solid grey;
-  }
-  /* Muestra la parte de contenido cuando está activa. Establece la altura */
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-.acordeon .contenedor.activa .contenido {
-    height: 150px;
-  }
-  
-  /* Cambia de signo positivo a negativo una vez activado */
-  
-  .acordeon .contenedor.activa .etiqueta::before {
-    content: '-';
-    font-size: 30px;
-  }
+
+.acordeon h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.acordeon .contenedor {
+  border-bottom: 1px solid #ddd;
+}
+
+.acordeon .contenedor:last-child {
+  border-bottom: none;
+}
+
+.acordeon .label {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.acordeon .label:hover {
+  background-color: #f0f0f0;
+}
+
+.acordeon .content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #555;
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+.acordeon .content.open {
+  max-height: 200px; /* Ajusta según la cantidad de texto */
+  padding: 15px;
+}
