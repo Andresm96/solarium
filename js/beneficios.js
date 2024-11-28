@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const labels = document.querySelectorAll(".acordeon .label");
   
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+  
   document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact-form");
   
@@ -57,3 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
       return regex.test(email);
     }
   });
+  
+
+const acordeon = document.getElementsByClassName('contenedor');
+
+for (i=0; i<acordeon.length; i++) {
+  acordeon[i].addEventListener('click', function () {
+    this.classList.toggle('activa')
+  })
+}
