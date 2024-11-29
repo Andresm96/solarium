@@ -73,7 +73,6 @@
      background-size: cover;
      width:100%; 
      height: 650px;
-     border: 1px solid orange;
  }
  
  .contenido1{
@@ -173,8 +172,9 @@
      display: grid;
      grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
      gap: 15px; /* Espaciado entre las columnas */
-     border: 1px solid #000; /* Opcional: para visualizar el contenedor */
      padding: 10px; /* Espaciado interno del contenedor */
+     box-shadow:0 2px 5px rgba(0, 0, 0, .1), 0 10px 20px rgba(0, 0, 0, .05);
+     border-radius: 15px;
  }
  
  .selector{
